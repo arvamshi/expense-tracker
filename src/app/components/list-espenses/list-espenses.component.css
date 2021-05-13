@@ -1,0 +1,16 @@
+
+  .padded-div{
+    max-width: 50%;
+    margin: auto;
+    text-align:center;
+    padding:auto;
+  }
+  
+.edit-button{
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+p{
+  margin: 0;
+}

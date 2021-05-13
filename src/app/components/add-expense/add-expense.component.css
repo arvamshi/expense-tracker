@@ -1,0 +1,21 @@
+
+
+  button {
+    margin: auto;
+  }
+
+  .padded-div{
+    margin: auto;
+    text-align:center;
+    padding:auto;
+  }
+
+  [nz-button] {
+    margin-right: 8px;
+    margin-bottom: 12px;
+  }
+
+  input,textarea{
+    border-radius: 5px;
+    border: 3px solid #1890ff;
+  }

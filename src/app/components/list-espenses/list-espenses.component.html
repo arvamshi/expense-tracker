@@ -1,0 +1,14 @@
+<div class="padded-div">
+    <h3>My Expense List</h3>
+    <hr>
+<div *ngFor="let expense of expenses">
+    <p><b>{{expense.expense}}</b> {{expense.amount | currency: 'INR'}}<br>
+        <button nz-button nzType="primary" class="edit-button"><a routerLink="/editexpense/{{expense.id}}">Edit</a></button>
+        <button nz-button nzType="primary" nzDanger (click)="deleteExpense(expense.id)" class="edit-button">Delete</button> </p>
+        <hr>
+       
+</div>
+
+<div style="margin:20px"><button nz-button nzType="primary"><a routerLink="/addexpense">Add Expense</a></button></div>
+
+</div>

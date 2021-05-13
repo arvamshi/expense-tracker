@@ -1,0 +1,38 @@
+
+<div class=padded-div>
+
+<form (ngSubmit)="saveExpense()" nz-form>
+        <nz-form-item>
+                <nz-form-control >
+                        <input type="text"
+                                name="expense"
+                                [(ngModel)]="expense.expense"
+                                placeholder="Enter expense name"/>
+                </nz-form-control>
+        </nz-form-item >
+
+        <nz-form-item>
+                <nz-form-control >
+                        <input type="text"
+                                name="amount"
+                                [(ngModel)]="expense.amount"
+                                placeholder="Enter amount"/>
+                </nz-form-control>
+        </nz-form-item >
+
+        <nz-form-item>
+                <nz-form-control >
+                        <textarea type="text"
+                                name="description"
+                                [(ngModel)]="expense.description"
+                                placeholder="Enter description"></textarea>
+                </nz-form-control>
+        </nz-form-item >
+
+    <button nz-button nzType="primary" type="submit">Add Expense</button>
+    <button *ngIf="expense.id" (click)="deleteExpense(expense.id)" nz-button nzType="primary" nzDanger>Delete Expense</button>
+</form>
+
+</div>
+
+
